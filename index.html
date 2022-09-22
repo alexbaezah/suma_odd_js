@@ -11,7 +11,8 @@
    
         function oddSum(a,b){
             var suma = 0
-            for (var i = a; i < b +1; i++){
+            if(a >= 0 && a <= b && b <= 100){
+                for (var i = a; i < b +1; i++){
                 if(i%2 == 1){
                     console.log(i);
                     suma = suma + i;
@@ -19,13 +20,18 @@
                     
                 }
                 
+                
             }
             
-            return console.log(suma);
+            return console.log("la suma es: "+suma);
+                
+            }
+            
            
         }
 
-        oddSum(1,8);
+        oddSum(2,5);
+        oddSum(5,1);
         /*
         var a = 1;
         var b = 8;
